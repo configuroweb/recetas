@@ -5,7 +5,7 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="breakfast"><strong>Breakfast Recipes</strong></h5>
+                <h5 class="modal-title" id="breakfast"><strong>Desayunos</strong></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -14,7 +14,7 @@
 
                 <?php
 
-                $stmt = $conn->prepare("SELECT * FROM `tbl_recipe` LEFT JOIN `tbl_category` ON `tbl_recipe`.`tbl_category_id` = `tbl_category`.`tbl_category_id` WHERE `category_name` = 'Breakfast' ");
+                $stmt = $conn->prepare("SELECT * FROM `tbl_recipe` LEFT JOIN `tbl_category` ON `tbl_recipe`.`tbl_category_id` = `tbl_category`.`tbl_category_id` WHERE `category_name` = 'Desayuno' ");
                 $stmt->execute();
 
                 $result = $stmt->fetchAll();
@@ -31,7 +31,7 @@
                         </div>
                         <div class="card-body">
                             <h6 class="card-title text-center"><strong><?php echo $recipeName ?></strong></h6>
-                            <i class="text-muted">Category: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
+                            <i class="text-muted">Categoría: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
                         </div>
                     </div>
 
@@ -41,7 +41,7 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -52,7 +52,7 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="lunch"><strong>Lunch Recipes</strong></h5>
+                <h5 class="modal-title" id="lunch"><strong>Almuerzo</strong></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -61,7 +61,7 @@
 
                 <?php
 
-                $stmt = $conn->prepare("SELECT * FROM `tbl_recipe` LEFT JOIN `tbl_category` ON `tbl_recipe`.`tbl_category_id` = `tbl_category`.`tbl_category_id` WHERE `category_name` = 'Lunch' ");
+                $stmt = $conn->prepare("SELECT * FROM `tbl_recipe` LEFT JOIN `tbl_category` ON `tbl_recipe`.`tbl_category_id` = `tbl_category`.`tbl_category_id` WHERE `category_name` = 'Almuerzo' ");
                 $stmt->execute();
 
                 $result = $stmt->fetchAll();
@@ -79,7 +79,7 @@
                         </div>
                         <div class="card-body">
                             <h6 class="card-title text-center"><strong><?php echo $recipeName ?></strong></h6>
-                            <i class="text-muted">Category: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
+                            <i class="text-muted">Categoría: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
                         </div>
                     </div>
 
@@ -89,7 +89,7 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -100,7 +100,7 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="dinner"><strong>Dinner Recipes</strong></h5>
+                <h5 class="modal-title" id="dinner"><strong>Cena</strong></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -109,7 +109,7 @@
 
                 <?php
 
-                $stmt = $conn->prepare("SELECT * FROM `tbl_recipe` LEFT JOIN `tbl_category` ON `tbl_recipe`.`tbl_category_id` = `tbl_category`.`tbl_category_id` WHERE `category_name` = 'Dinner' ");
+                $stmt = $conn->prepare("SELECT * FROM `tbl_recipe` LEFT JOIN `tbl_category` ON `tbl_recipe`.`tbl_category_id` = `tbl_category`.`tbl_category_id` WHERE `category_name` = 'Cena' ");
                 $stmt->execute();
 
                 $result = $stmt->fetchAll();
@@ -127,7 +127,7 @@
                         </div>
                         <div class="card-body">
                             <h6 class="card-title text-center"><strong><?php echo $recipeName ?></strong></h6>
-                            <i class="text-muted">Category: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
+                            <i class="text-muted">Categoría: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
                         </div>
                     </div>
 
@@ -137,7 +137,7 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -148,7 +148,7 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="appetizer"><strong>Appetizer Recipes</strong></h5>
+                <h5 class="modal-title" id="appetizer"><strong>Aperitivo</strong></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -157,7 +157,7 @@
 
                 <?php
 
-                $stmt = $conn->prepare("SELECT * FROM `tbl_recipe` LEFT JOIN `tbl_category` ON `tbl_recipe`.`tbl_category_id` = `tbl_category`.`tbl_category_id` WHERE `category_name` = 'Appetizer' ");
+                $stmt = $conn->prepare("SELECT * FROM `tbl_recipe` LEFT JOIN `tbl_category` ON `tbl_recipe`.`tbl_category_id` = `tbl_category`.`tbl_category_id` WHERE `category_name` = 'Aperitivo' ");
                 $stmt->execute();
 
                 $result = $stmt->fetchAll();
@@ -175,7 +175,7 @@
                         </div>
                         <div class="card-body">
                             <h6 class="card-title text-center"><strong><?php echo $recipeName ?></strong></h6>
-                            <i class="text-muted">Category: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
+                            <i class="text-muted">Categoría: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
                         </div>
                     </div>
 
@@ -185,7 +185,7 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -196,7 +196,7 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="dessert"><strong>Dessert Recipes</strong></h5>
+                <h5 class="modal-title" id="dessert"><strong>Postre</strong></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -205,7 +205,7 @@
 
                 <?php
 
-                $stmt = $conn->prepare("SELECT * FROM `tbl_recipe` LEFT JOIN `tbl_category` ON `tbl_recipe`.`tbl_category_id` = `tbl_category`.`tbl_category_id` WHERE `category_name` = 'Dessert' ");
+                $stmt = $conn->prepare("SELECT * FROM `tbl_recipe` LEFT JOIN `tbl_category` ON `tbl_recipe`.`tbl_category_id` = `tbl_category`.`tbl_category_id` WHERE `category_name` = 'Postre' ");
                 $stmt->execute();
 
                 $result = $stmt->fetchAll();
@@ -223,7 +223,7 @@
                         </div>
                         <div class="card-body">
                             <h6 class="card-title text-center"><strong><?php echo $recipeName ?></strong></h6>
-                            <i class="text-muted">Category: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
+                            <i class="text-muted">Categoría: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
                         </div>
                     </div>
 
@@ -233,7 +233,7 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
@@ -244,7 +244,7 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="fastFood"><strong>Fast Food Recipes</strong></h5>
+                <h5 class="modal-title" id="fastFood"><strong>Comida rápida</strong></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -253,7 +253,7 @@
 
                 <?php
 
-                $stmt = $conn->prepare("SELECT * FROM `tbl_recipe` LEFT JOIN `tbl_category` ON `tbl_recipe`.`tbl_category_id` = `tbl_category`.`tbl_category_id` WHERE `category_name` = 'Fast Food' ");
+                $stmt = $conn->prepare("SELECT * FROM `tbl_recipe` LEFT JOIN `tbl_category` ON `tbl_recipe`.`tbl_category_id` = `tbl_category`.`tbl_category_id` WHERE `category_name` = 'Comida rápida' ");
                 $stmt->execute();
 
                 $result = $stmt->fetchAll();
@@ -271,7 +271,7 @@
                         </div>
                         <div class="card-body">
                             <h6 class="card-title text-center"><strong><?php echo $recipeName ?></strong></h6>
-                            <i class="text-muted">Category: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
+                            <i class="text-muted">Categoría: </i><i class="card-subtitle text-muted"><?php echo $categoryName ?></i><br>
                         </div>
                     </div>
 
@@ -281,7 +281,7 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
